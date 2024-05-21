@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/BrawlersConstraints"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pbbackground5">
+
+    <ImageView
+        android:id="@+id/food1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="32dp"
+        android:scaleX="-1"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/brawler3" />
+
+    <ImageView
+        android:id="@+id/food2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleX="-1"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/food1" />
+
+    <TextView
+        android:id="@+id/doubloonsText"
+        android:layout_width="57dp"
+        android:layout_height="94dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/bangers"
+        android:shadowColor="#000000"
+        android:shadowRadius="15"
+        android:text="10"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/spot1"
+        android:layout_width="108dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="138dp"
+        android:scaleX="-1"
+        app:layout_constraintStart_toEndOf="@+id/spot2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/empty" />
+
+    <ImageView
+        android:id="@+id/spot2"
+        android:layout_width="108dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="138dp"
+        android:scaleX="-1"
+        app:layout_constraintStart_toEndOf="@+id/spot3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/empty" />
+
+    <ImageView
+        android:id="@+id/spot3"
+        android:layout_width="108dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="138dp"
+        android:scaleX="-1"
+        app:layout_constraintStart_toEndOf="@+id/spot4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/empty" />
+
+    <ImageView
+        android:id="@+id/spot4"
+        android:layout_width="108dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="138dp"
+        android:scaleX="-1"
+        app:layout_constraintStart_toEndOf="@+id/spot5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/empty" />
+
+    <ImageView
+        android:id="@+id/brawler3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="100dp"
+        android:scaleX="-1"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/brawler1" />
+
+    <ImageView
+        android:id="@+id/brawler1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleX="-1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/brawler2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleX="-1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/brawler1" />
+
+    <Button
+        android:id="@+id/backBtn"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+        android:layout_width="114dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FFEB3B"
+        android:fontFamily="@font/bangers"
+        android:text="Back"
+        android:textSize="16sp"
+        app:cornerRadius="25px"
+        app:icon="?attr/homeAsUpIndicator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#FF5722"
+        app:strokeColor="#FF5722" />
+
+    <Button
+        android:id="@+id/battleBtn"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+        android:layout_width="114dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FFEB3B"
+        android:fontFamily="@font/bangers"
+        android:text="Battle!"
+        android:textSize="16sp"
+        app:cornerRadius="25px"
+        app:layout_constraintStart_toEndOf="@+id/backBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#FF5722"
+        app:strokeColor="#FF5722" />
+
+    <Button
+        android:id="@+id/rollBtn"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+        android:layout_width="114dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FFEB3B"
+        android:fontFamily="@font/bangers"
+        android:text="Roll"
+        android:textSize="16sp"
+        app:cornerRadius="25px"
+        app:layout_constraintStart_toEndOf="@+id/battleBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#FF5722"
+        app:strokeColor="#FF5722" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="99dp"
+        android:layout_height="48dp"
+        android:fontFamily="@font/bangers"
+        android:shadowColor="#000000"
+        android:shadowRadius="10"
+        android:text="Shop"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/brawler2"
+        app:layout_constraintEnd_toEndOf="@+id/brawler2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+            android:id="@+id/spot5"
+            android:layout_width="108dp"
+            android:layout_height="104dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="72dp"
+            android:scaleX="-1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/backBtn" />
+
+    <Button
+        android:id="@+id/sellBtn"
+        android:layout_width="135dp"
+        android:layout_height="105dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#90000000"
+        android:fontFamily="@font/bangers"
+        android:text="Sell"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="45dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/doubloonsText"
+        app:layout_constraintEnd_toStartOf="@+id/doubloonsText"
+        app:srcCompat="@drawable/_a48a6406ace91d" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

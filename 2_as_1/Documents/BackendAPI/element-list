@@ -1,0 +1,13 @@
+backend.dbms.PocketBrawlers
+backend.dbms.PocketBrawlers.Account
+backend.dbms.PocketBrawlers.Brawler
+backend.dbms.PocketBrawlers.Brawler.Attributes
+backend.dbms.PocketBrawlers.Brawler.Shop
+backend.dbms.PocketBrawlers.Brawler.User_Brawlers
+backend.dbms.PocketBrawlers.CPU
+backend.dbms.PocketBrawlers.Food
+backend.dbms.PocketBrawlers.Leagues
+backend.dbms.PocketBrawlers.Services
+backend.dbms.PocketBrawlers.Websocket
+backend.dbms.PocketBrawlers.Websocket.Battles
+backend.dbms.PocketBrawlers.Websocket.Chat

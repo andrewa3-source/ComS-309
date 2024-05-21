@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pbbackground4">
+
+    <ImageView
+        android:id="@+id/opponentSpot4"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="96dp"
+        android:scaleX="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/opponentSpot5"
+        app:srcCompat="@drawable/empty" />
+
+    <ImageView
+        android:id="@+id/opponentSpot3"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="96dp"
+        android:scaleX="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/opponentSpot4"
+        app:srcCompat="@drawable/empty" />
+
+    <ImageView
+        android:id="@+id/opponentSpot2"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="96dp"
+        android:scaleX="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/opponentSpot3"
+        app:srcCompat="@drawable/empty" />
+
+    <ImageView
+        android:id="@+id/opponentSpot1"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="96dp"
+        android:scaleX="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/opponentSpot2"
+        app:srcCompat="@drawable/empty" />
+
+    <ImageView
+        android:id="@+id/opponentSpot5"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="96dp"
+        android:scaleX="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/empty" />
+
+    <ImageView
+        android:id="@+id/playerSpot1"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="96dp"
+        android:scaleX="-1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/playerSpot2"
+        app:srcCompat="@drawable/empty" />
+
+    <ImageView
+        android:id="@+id/playerSpot4"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="96dp"
+        android:scaleX="-1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/playerSpot5"
+        app:srcCompat="@drawable/empty" />
+
+    <ImageView
+        android:id="@+id/playerSpot3"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="96dp"
+        android:scaleX="-1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/playerSpot4"
+        app:srcCompat="@drawable/empty" />
+
+    <ImageView
+        android:id="@+id/playerSpot5"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="96dp"
+        android:scaleX="-1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/empty" />
+
+    <ImageView
+        android:id="@+id/playerSpot2"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="96dp"
+        android:scaleX="-1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/playerSpot3"
+        app:srcCompat="@drawable/empty" />
+
+    <TextView
+        android:id="@+id/messageText"
+        android:layout_width="184dp"
+        android:layout_height="80dp"
+        android:fontFamily="@font/bangers"
+        android:shadowColor="#000000"
+        android:shadowRadius="20"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/playerSpot1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

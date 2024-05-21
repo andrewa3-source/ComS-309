@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/accountLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pbbackground2">
+
+    <Button
+        android:id="@+id/backBtn"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FFEB3B"
+        android:fontFamily="@font/bangers"
+        android:text="Back"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:cornerRadius="25px"
+        app:icon="?attr/actionModeCloseDrawable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="208dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/bangers"
+        android:shadowColor="#000000"
+        android:shadowRadius="20"
+        android:text="SIGN IN"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="98dp"
+        android:layout_height="41dp"
+        android:fontFamily="@font/bangers"
+        android:shadowColor="#000000"
+        android:shadowRadius="10"
+        android:text="Username"
+        android:textAlignment="center"
+        android:textColor="#FFEB3B"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/usernameInput"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="99dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/bangers"
+        android:shadowColor="#000000"
+        android:shadowRadius="10"
+        android:text="Password"
+        android:textAlignment="center"
+        android:textColor="#FFEB3B"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/passwordInput"
+        app:layout_constraintTop_toBottomOf="@+id/usernameInput" />
+
+    <EditText
+        android:id="@+id/usernameInput"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="211dp"
+        android:layout_height="40dp"
+        android:background="@android:drawable/editbox_dropdown_dark_frame"
+        android:backgroundTint="#90000000"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="text"
+        android:shadowColor="#000000"
+        android:shadowRadius="10"
+        android:singleLine="true"
+        android:textColor="#FFEB3B"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="208dp"
+        android:layout_height="38dp"
+        android:background="@android:drawable/editbox_dropdown_dark_frame"
+        android:backgroundTint="#90000000"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="#FFEB3B"
+        app:layout_constraintEnd_toEndOf="@+id/usernameInput"
+        app:layout_constraintStart_toStartOf="@+id/usernameInput"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <Button
+        android:id="@+id/signInBtn"
+        android:layout_width="88dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FFEB3B"
+        android:fontFamily="@font/bangers"
+        android:text="SIGN IN"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/passwordInput"
+        app:layout_constraintStart_toStartOf="@+id/passwordInput"
+        app:layout_constraintTop_toBottomOf="@+id/passwordInput" />
+
+    <Button
+        android:id="@+id/changePasswordBtn"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="133dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#41000000"
+        android:fontFamily="@font/bangers"
+        android:text="Create Account"
+        android:textColor="#FFEB3B"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/signInBtn"
+        app:layout_constraintStart_toStartOf="@+id/signInBtn"
+        app:layout_constraintTop_toBottomOf="@+id/signInBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

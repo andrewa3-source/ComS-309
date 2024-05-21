@@ -1,0 +1,1 @@
+Testing git commands in 2_AS_1 gitlab
